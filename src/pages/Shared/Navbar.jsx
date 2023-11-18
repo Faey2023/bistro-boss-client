@@ -57,7 +57,7 @@ const Navbar = () => {
   );
   return (
     <>
-      <div className="navbar bg-gray-600">
+      <div className="navbar fixed z-10 bg-[#15151580] text-[#FFF] max-w-7xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -84,10 +84,10 @@ const Navbar = () => {
             </ul>
           </div>
           <p
-            className="text-2xl font-bold uppercase
+            className="text-xl md:text-2xl font-bold uppercase
           "
           >
-            <span className="text-4xl font-black"> Bistro boss</span>
+            <span className="text-xl md:text-4xl font-black"> Bistro boss</span>
             <br /> <span className="tracking-[9.12px]">restaurant</span>
           </p>
         </div>
