@@ -1,11 +1,11 @@
-
+import Slider from "../../layout/Slider";
 
 const Home = () => {
-    return (
-        <div>
-            <h1>welcome home</h1>
-        </div>
-    );
+  return (
+    <div>
+      <Slider />
+    </div>
+  );
 };
 
 export default Home;
