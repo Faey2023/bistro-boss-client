@@ -6,8 +6,10 @@ const MainPage = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
-      <Footer />
+      <div className="space-y-16">
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   );
 };
