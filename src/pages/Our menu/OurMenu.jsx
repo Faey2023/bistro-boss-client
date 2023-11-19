@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Pizza from "./category/pizza/Pizza";
 import Dessert from "./category/dessert/Dessert";
 import Soup from "./category/soup/Soup";
+import Salad from "./category/salad/Salad";
 
 const OurMenu = () => {
   return (
@@ -15,6 +16,7 @@ const OurMenu = () => {
       {/* <TodayOffer /> */}
       <Dessert />
       <Pizza />
+      <Salad />
       <Soup />
     </>
   );

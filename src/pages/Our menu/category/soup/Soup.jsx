@@ -6,7 +6,7 @@ import Button from "../../../Shared/button/Button";
 
 const Soup = () => {
   const [menus] = UseMenu();
-  const pizza = menus.filter((i) => i.category === "pizza");
+  const soup = menus.filter((i) => i.category === "soup");
   return (
     <>
       <Cover
@@ -17,7 +17,7 @@ const Soup = () => {
         heading={"soups"}
       />
       <div className="grid md:grid-cols-2 gap-10">
-        {pizza.map((menu) => (
+        {soup.map((menu) => (
           <Menu key={menu._id} menu={menu}></Menu>
         ))}
       </div>
