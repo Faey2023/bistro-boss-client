@@ -1,5 +1,5 @@
 import Title from "../../Shared/title/Title";
-import Menu from "./Menu";
+import Menu from "../../Shared/design/Menu";
 import Button from "../../Shared/button/Button";
 import UseMenu from "../../../hooks/UseMenu";
 

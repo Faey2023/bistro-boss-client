@@ -4,11 +4,11 @@ const Footer = () => {
       <div className="text-neutral-content flex flex-row h-[400px] ">
         <div className="h-full flex-1 flex flex-col justify-center items-center bg-[#1F2937]">
           <h1>CONTACT US</h1>
-          <p className="w-[350px] flex flex-col justify-center items-center">
+          <div className="w-[350px] flex flex-col justify-center items-center">
             123 ABS Street, Uni 21, Bangladesh <p>+88 123456789</p>{" "}
             <p>Mon - Fri: 08:00 - 22:00</p>
             <p>Sat - Sun: 10:00 - 23:00</p>
-          </p>
+          </div>
         </div>
         <div className="flex-1 flex flex-col justify-center items-center bg-[#111827] ">
           <header className="uppercase">follow us</header>
