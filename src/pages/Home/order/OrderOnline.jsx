@@ -17,8 +17,8 @@ const OrderOnline = () => {
     <>
       
         <Title
-          subHeading="---From
-          11:00am to 10:00pm---"
+          subHeading="From
+          11:00am to 10:00pm"
           heading="Order Online"
         />
       <div className="my-5">
