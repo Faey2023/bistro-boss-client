@@ -1,5 +1,5 @@
 const Menu = ({ menu }) => {
-  const { _id, name, recipe, image, price } = menu || {};
+  const { name, recipe, image, price } = menu || [];
   return (
     <>
       <div className="flex gap-4">

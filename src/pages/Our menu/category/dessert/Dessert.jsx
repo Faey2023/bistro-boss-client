@@ -8,8 +8,7 @@ const Dessert = () => {
   const [menus] = UseMenu();
   const dessert = menus.filter((i) => i.category === "dessert");
   return (
-    <>
-      <div className="h-[600px]">
+    <>    
         <Cover
           img={dessertBg}
           text={
@@ -17,7 +16,6 @@ const Dessert = () => {
           }
           heading={"dessert"}
         />
-      </div>
       <div className="grid md:grid-cols-2 gap-10">
         {dessert.map((menu) => (
           <Menu key={menu._id} menu={menu}></Menu>
