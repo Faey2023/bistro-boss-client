@@ -14,7 +14,7 @@ const Pizza = () => {
         text={
           "Dive into the pizza paradise at Bistro Boss. Our gourmet pizzas are a celebration of quality ingredients, expertly crafted crusts, and imaginative toppings."
         }
-        heading={"pizza"}
+        heading={"pizzas"}
       />
       <div className="grid md:grid-cols-2 gap-10">
         {pizza.map((menu) => (
