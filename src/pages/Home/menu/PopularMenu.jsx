@@ -1,30 +1,29 @@
-import { useEffect, useState } from "react";
 import Title from "../../Shared/title/Title";
 import Menu from "./Menu";
+import Button from "../../Shared/button/Button";
+import UseMenu from "../../../hooks/UseMenu";
 
 const PopularMenu = () => {
-  const [menus, setMenus] = useState([]);
+  const [menus] = UseMenu();
+  const popular = menus.filter((i) => i.category === "popular");
+  // const [menus, setMenus] = useState([]);
+  // useEffect(() => {
+  //   fetch("menu.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       const popularItems = data.filter((i) => i.category === "popular");
+  //       setMenus(popularItems);
+  //     });
+  // }, []);
 
-  useEffect(() => {
-    fetch("menu.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const popularItems = data.filter((i) => i.category === "popular");
-        setMenus(popularItems);
-      });
-  }, []);
   return (
     <>
       <Title subHeading="Popular Items" heading="from our menu" />
       <div className="grid md:grid-cols-2 gap-10">
-        {menus.map((menu) => (
+        {popular.map((menu) => (
           <Menu key={menu._id} menu={menu}></Menu>
         ))}
-        <div className="flex flex-col justify-center items-center">
-          <button className="uppercase text-xl font-medium mb-5">
-            view full menu
-          </button>
-        </div>
+        <Button text={"View full menu"} />
       </div>
     </>
   );

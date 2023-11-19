@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar fixed z-10 bg-[#15151580] text-[#FFF] max-w-7xl mx-auto">
-        <div className="navbar-start">
+        <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -78,7 +78,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-5"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-800 rounded-box w-52 gap-5 \"
             >
               {navLinks}
             </ul>

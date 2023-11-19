@@ -21,7 +21,7 @@ const Featured = () => {
             <p>
               March 20, 2023 WHERE CAN I GET SOME? To experience the culinary
               delights of our Featured Selections, visit our restaurant located
-              at [Your Restaurant Address]. Our skilled chefs have meticulously
+              at Bistro Boss. Our skilled chefs have meticulously
               prepared each dish to perfection, ensuring a gastronomic journey
               like no other. If you prefer the convenience of dining at home,
               you can also order through our website or app for a delightful
