@@ -29,7 +29,10 @@ const Featured = () => {
               extraordinary flavors of our carefully curated menu. Your culinary
               adventure awaits! 🌟
             </p>
-            <button className="text-white border-b-4 rounded-lg btn btn-outline mt-3">Read More</button>
+
+            <button className="text-white border-b-4 rounded-lg btn btn-outline mt-3">
+              Read More
+            </button>
           </div>
         </div>
       </div>
