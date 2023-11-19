@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Banner from "./Banner";
 import TodayOffer from "./TodayOffer";
 import Pizza from "./category/pizza/Pizza";
+import Dessert from "./category/dessert/Dessert";
 
 const OurMenu = () => {
   return (
@@ -10,7 +11,8 @@ const OurMenu = () => {
         <title>Bistro Boss|Our Menu</title>
       </Helmet>
       <Banner />
-      <TodayOffer />
+      {/* <TodayOffer /> */}
+      <Dessert />
       <Pizza />
     </>
   );

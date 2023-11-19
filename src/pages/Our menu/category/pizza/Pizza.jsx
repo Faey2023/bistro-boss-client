@@ -2,6 +2,7 @@ import UseMenu from "../../../../hooks/UseMenu";
 import Menu from "../../../Shared/design/Menu";
 import Cover from "../../../Shared/section cover/Cover";
 import pizzaBg from "../../../../assets/menu/pizza-bg.jpg";
+import Button from "../../../Shared/button/Button";
 
 const Pizza = () => {
   const [menus] = UseMenu();
@@ -20,6 +21,7 @@ const Pizza = () => {
           <Menu key={menu._id} menu={menu}></Menu>
         ))}
       </div>
+      <Button title={"ORDER YOUR FAVORITE FOOD"} />
     </>
   );
 };
