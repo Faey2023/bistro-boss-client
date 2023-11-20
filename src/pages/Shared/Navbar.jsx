@@ -44,14 +44,14 @@ const Navbar = () => {
         our menu
       </NavLink>
       <NavLink
-        to="/shop"
+        to="/order"
         className={({ isActive }) =>
           isActive
             ? "text-[#EEFF25] uppercase text-xl font-extrabold"
             : "text-white text-xl font-extrabold uppercase"
         }
       >
-        our shop
+        order
       </NavLink>
     </>
   );

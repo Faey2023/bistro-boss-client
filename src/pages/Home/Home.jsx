@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet";
-import Banner from "./banner/Banner";
 import Featured from "./featured/Featured";
 import PopularMenu from "./menu/PopularMenu";
 import OrderOnline from "./order/OrderOnline";
 import Testimonial from "./testimonial/Testimonial";
+import HomeBanner from "./banner/HomeBanner";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <Helmet>
         <title>Bistro Boss|Home</title>
       </Helmet>
-      <Banner />
+      <HomeBanner />
       <OrderOnline />
       <PopularMenu />
       <Featured />

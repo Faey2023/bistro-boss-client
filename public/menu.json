@@ -2,7 +2,7 @@
   {
     "_id": 1,
     "name": "Caesar Salad",
-    "image": "caesar_salad.jpg",
+    "image": "https://i.ibb.co/BfgTykK/1.jpg",
     "category": "salad",
     "price": 9.99,
     "recipe": "Fresh romaine lettuce tossed with creamy Caesar dressing, croutons, and Parmesan cheese."
@@ -106,7 +106,7 @@
   {
     "_id": 14,
     "name": "Caprese Salad",
-    "image": "https://i.ibb.co/31S3JXf/14.webp",
+    "image": "https://i.ibb.co/7z2H0vr/14.webp",
     "category": "salad",
     "price": 10.49,
     "recipe": "Caprese salad with ripe tomatoes, fresh mozzarella, basil leaves, drizzled with balsamic glaze."
