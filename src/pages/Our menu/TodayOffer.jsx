@@ -1,4 +1,5 @@
 import UseMenu from "../../hooks/UseMenu";
+import Button from "../Shared/button/Button";
 import Menu from "../Shared/design/Menu";
 import Title from "../Shared/title/Title";
 
@@ -13,6 +14,7 @@ const TodayOffer = () => {
           <Menu key={menu._id} menu={menu}></Menu>
         ))}
       </div>
+      <Button title={"order your favorite food."} />
     </div>
   );
 };
