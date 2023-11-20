@@ -10,7 +10,7 @@
   {
     "_id": 2,
     "name": "Tomato Basil Soup",
-    "image": "tomato_basil_soup.jpg",
+    "image": "https://i.ibb.co/FwBkybC/02.jpg",
     "category": "soup",
     "price": 7.99,
     "recipe": "A comforting blend of ripe tomatoes and fresh basil, simmered to perfection. Served with a side of crusty bread."
@@ -18,7 +18,7 @@
   {
     "_id": 3,
     "name": "Chocolate Brownie",
-    "image": "chocolate_brownie.jpg",
+    "image": "https://i.ibb.co/hfYLptC/3.jpg",
     "category": "dessert",
     "price": 5.99,
     "recipe": "Decadent chocolate brownie with a fudgy texture and a sprinkle of powdered sugar."
@@ -26,7 +26,7 @@
   {
     "_id": 4,
     "name": "Margherita Pizza",
-    "image": "margherita_pizza.jpg",
+    "image": "https://i.ibb.co/0mkmqM1/04.jpg",
     "category": "pizza",
     "price": 12.99,
     "recipe": "Classic Margherita pizza topped with fresh tomatoes, mozzarella, basil, and a drizzle of olive oil."
@@ -42,7 +42,7 @@
   {
     "_id": 6,
     "name": "Greek Salad",
-    "image": "greek_salad.jpg",
+    "image": "https://i.ibb.co/f89njMf/06.jpg",
     "category": "salad",
     "price": 10.99,
     "recipe": "A refreshing Greek salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette."
@@ -50,7 +50,7 @@
   {
     "_id": 7,
     "name": "Chicken Noodle Soup",
-    "image": "chicken_noodle_soup.jpg",
+    "image": "https://i.ibb.co/cY6p7c4/07.jpg",
     "category": "soup",
     "price": 8.99,
     "recipe": "Hearty chicken noodle soup with tender chunks of chicken, vegetables, and egg noodles."
@@ -58,7 +58,7 @@
   {
     "_id": 8,
     "name": "Cheesecake",
-    "image": "cheesecake.jpg",
+    "image": "https://i.ibb.co/qWb9NmG/8.jpg",
     "category": "dessert",
     "price": 6.99,
     "recipe": "Creamy New York-style cheesecake with a graham cracker crust, topped with a sweet fruit compote."
@@ -66,23 +66,23 @@
   {
     "_id": 9,
     "name": "Cobb Salad",
-    "image": "cobb_salad.jpg",
+    "image": "https://i.ibb.co/ZHjqnMX/09.jpg",
     "category": "salad",
     "price": 11.99,
     "recipe": "A classic Cobb salad with grilled chicken, avocado, bacon, blue cheese, and a Dijon vinaigrette."
   },
   {
     "_id": 10,
-    "name": "Minestrone Soup",
-    "image": "minestrone_soup.jpg",
-    "category": "soup",
-    "price": 8.49,
-    "recipe": "Vegetarian minestrone soup with a medley of fresh vegetables, beans, and pasta in a savory broth."
+    "name": "Blueberry Cheesecake",
+    "image": "https://i.ibb.co/mhqmky3/43.jpg",
+    "category": "dessert",
+    "price": 11.99,
+    "recipe": "Delicious blueberry cheesecake with a buttery graham cracker crust and a blueberry compote topping."
   },
   {
     "_id": 11,
     "name": "Tiramisu",
-    "image": "tiramisu.jpg",
+    "image": "https://i.ibb.co/9nhpBh0/11.jpg",
     "category": "dessert",
     "price": 7.99,
     "recipe": "Classic Italian tiramisu with layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder."
@@ -90,7 +90,7 @@
   {
     "_id": 12,
     "name": "Pepperoni Pizza",
-    "image": "pepperoni_pizza.jpg",
+    "image": "https://i.ibb.co/X8Wv3Qc/12.jpg",
     "category": "pizza",
     "price": 13.99,
     "recipe": "Satisfying pepperoni pizza with a generous amount of pepperoni, mozzarella cheese, and tomato sauce."
@@ -106,23 +106,23 @@
   {
     "_id": 14,
     "name": "Caprese Salad",
-    "image": "caprese_salad.jpg",
+    "image": "https://i.ibb.co/31S3JXf/14.webp",
     "category": "salad",
     "price": 10.49,
     "recipe": "Caprese salad with ripe tomatoes, fresh mozzarella, basil leaves, drizzled with balsamic glaze."
   },
   {
     "_id": 15,
-    "name": "Lentil Soup",
-    "image": "lentil_soup.jpg",
-    "category": "soup",
-    "price": 7.79,
-    "recipe": "Hearty lentil soup with a blend of spices, carrots, and celery, served with a side of crusty bread."
+    "name": "Buffalo Chicken Pizza",
+    "image": "https://i.ibb.co/9W7VccV/15.jpg",
+    "category": "pizza",
+    "price": 16.99,
+    "recipe": "Spicy buffalo chicken pizza with shredded buffalo chicken, red onion, mozzarella cheese, and a drizzle of ranch dressing."
   },
   {
     "_id": 16,
     "name": "Molten Lava Cake",
-    "image": "molten_lava_cake.jpg",
+    "image": "https://i.ibb.co/b7qhw6T/16.jpg",
     "category": "dessert",
     "price": 8.99,
     "recipe": "Indulgent molten lava cake with a gooey chocolate center, served warm and topped with a scoop of vanilla ice cream."
@@ -130,31 +130,32 @@
   {
     "_id": 17,
     "name": "Spinach and Strawberry Salad",
-    "image": "spinach_strawberry_salad.jpg",
+    "image": "https://i.ibb.co/3h3wTQN/17.jpg",
     "category": "salad",
     "price": 12.49,
     "recipe": "Vibrant spinach and strawberry salad with feta cheese, candied pecans, and a raspberry vinaigrette."
   },
   {
     "_id": 18,
-    "name": "Broccoli Cheddar Soup",
-    "image": "broccoli_cheddar_soup.jpg",
-    "category": "soup",
-    "price": 9.49,
-    "recipe": "Rich and creamy broccoli cheddar soup with tender broccoli florets and melted cheddar cheese."
+    "name": "Seafood Extravaganza",
+    "image": "https://i.ibb.co/1zCrMTK/max-mota-N6-BTNba-KZMo-unsplash.jpg",
+    "category": "popular",
+    "price": 20.99,
+    "recipe": "A luxurious seafood dish featuring a medley of fresh seafood, perfectly seasoned and cooked to perfection."
   },
   {
     "_id": 19,
-    "name": "Key Lime Pie",
-    "image": "key_lime_pie.jpg",
-    "category": "dessert",
-    "price": 7.99,
-    "recipe": "Refreshing key lime pie with a tangy lime filling in a buttery graham cracker crust, topped with whipped cream."
+    "name": "Gourmet Seafood Platter",
+    "image": "https://i.ibb.co/TPcgbJ2/seafood-plate-with-shrimps-mussels-lobsters-served-with-lemon-glass-beer.webp",
+    "category": "popular",
+    "price": 24.99,
+    "recipe": "A luxurious gourmet seafood platter featuring a selection of the finest seafood delicacies, artfully presented."
   },
+
   {
     "_id": 20,
     "name": "BBQ Chicken Pizza",
-    "image": "bbq_chicken_pizza.jpg",
+    "image": "https://i.ibb.co/S0L78FB/20.jpg",
     "category": "pizza",
     "price": 14.99,
     "recipe": "Savory BBQ chicken pizza with grilled chicken, red onions, barbecue sauce, and mozzarella cheese."
@@ -169,16 +170,16 @@
   },
   {
     "_id": 22,
-    "name": "Caesar Wrap",
-    "image": "caesar_wrap.jpg",
-    "category": "salad",
-    "price": 10.99,
-    "recipe": "A convenient and delicious Caesar wrap with grilled chicken, romaine lettuce, and Caesar dressing wrapped in a tortilla."
+    "name": "Chef's Special Entree",
+    "image": "https://i.ibb.co/C589BNr/front-view-grins-salad-with-shrimps-nuts-arugula-cherry-tomatoes.webp",
+    "category": "popular",
+    "price": 22.99,
+    "recipe": "A chef's special entree featuring premium ingredients, innovative cooking techniques, and a burst of flavors."
   },
   {
     "_id": 23,
     "name": "Tomato Bisque",
-    "image": "tomato_bisque.jpg",
+    "image": "https://i.ibb.co/jgfcqxn/23.webp",
     "category": "soup",
     "price": 8.79,
     "recipe": "Creamy tomato bisque soup with a velvety texture, garnished with fresh basil and a drizzle of olive oil."
@@ -186,7 +187,7 @@
   {
     "_id": 24,
     "name": "Triple Chocolate Mousse",
-    "image": "triple_chocolate_mousse.jpg",
+    "image": "https://i.ibb.co/bvfXT8w/24.jpg",
     "category": "dessert",
     "price": 9.99,
     "recipe": "Decadent triple chocolate mousse with layers of dark, milk, and white chocolate mousse, topped with chocolate shavings."
@@ -194,7 +195,7 @@
   {
     "_id": 25,
     "name": "Meat Lovers Pizza",
-    "image": "meat_lovers_pizza.jpg",
+    "image": "https://i.ibb.co/k0ztGhR/25.jpg",
     "category": "pizza",
     "price": 16.99,
     "recipe": "Hearty meat lovers pizza loaded with pepperoni, sausage, bacon, and ground beef, topped with melted cheese."
@@ -209,40 +210,40 @@
   },
   {
     "_id": 27,
-    "name": "Mediterranean Quinoa Salad",
-    "image": "mediterranean_quinoa_salad.jpg",
-    "category": "salad",
-    "price": 11.49,
-    "recipe": "Wholesome Mediterranean quinoa salad with cherry tomatoes, cucumber, olives, and a lemon herb dressing."
+    "name": "Truffle Mushroom Pizza",
+    "image": "https://i.ibb.co/KW4d8jx/27.jpg",
+    "category": "pizza",
+    "price": 18.99,
+    "recipe": "Indulgent truffle mushroom pizza with a blend of gourmet mushrooms, truffle oil, and mozzarella cheese."
   },
   {
     "_id": 28,
-    "name": "Butternut Squash Soup",
-    "image": "butternut_squash_soup.jpg",
+    "name": "Lobster Bisque",
+    "image": "https://i.ibb.co/P5dxVqJ/28.jpg",
     "category": "soup",
-    "price": 9.99,
-    "recipe": "Velvety butternut squash soup with a hint of nutmeg, perfect for a warm and comforting experience."
+    "price": 14.99,
+    "recipe": "Decadent lobster bisque with chunks of tender lobster meat, a velvety broth, and a touch of brandy for richness."
   },
   {
     "_id": 29,
     "name": "Fruit Tart",
-    "image": "fruit_tart.jpg",
+    "image": "https://i.ibb.co/2j8VhCR/29.jpg",
     "category": "dessert",
     "price": 8.49,
     "recipe": "Colorful fruit tart with a buttery crust, vanilla pastry cream, and a variety of fresh seasonal fruits on top."
   },
   {
     "_id": 30,
-    "name": "Hawaiian Pizza",
-    "image": "hawaiian_pizza.jpg",
-    "category": "pizza",
-    "price": 15.49,
-    "recipe": "Tropical Hawaiian pizza with ham, pineapple, red onion, and mozzarella cheese for a sweet and savory delight."
+    "name": "Tropical Paradise",
+    "image": "https://i.ibb.co/Lgq9St6/orkun-orcan-OUApnf-WCrvw-unsplash-1.jpg",
+    "category": "popular",
+    "price": 21.99,
+    "recipe": "A taste of the tropics in this delightful dish, featuring exotic flavors and fresh, tropical ingredients."
   },
   {
     "_id": 31,
     "name": "Asian Sesame Chicken Salad",
-    "image": "asian_sesame_chicken_salad.jpg",
+    "image": "https://i.ibb.co/yVQ06W7/31.jpg",
     "category": "salad",
     "price": 13.49,
     "recipe": "A flavorful Asian sesame chicken salad with crispy chicken, mixed greens, mandarin oranges, and sesame ginger dressing."
@@ -250,26 +251,26 @@
   {
     "_id": 32,
     "name": "Wild Mushroom Soup",
-    "image": "wild_mushroom_soup.jpg",
+    "image": "https://i.ibb.co/HVxt5GT/32.jpg",
     "category": "soup",
     "price": 10.49,
     "recipe": "Savory wild mushroom soup with a medley of mushrooms, fresh herbs, and a touch of cream for richness."
   },
   {
     "_id": 33,
-    "name": "Banana Split",
-    "image": "banana_split.jpg",
-    "category": "dessert",
-    "price": 9.99,
-    "recipe": "Classic banana split with scoops of vanilla, chocolate, and strawberry ice cream, topped with whipped cream, nuts, and cherries."
+    "name": "Barbecue Beef Pizza",
+    "image": "https://i.ibb.co/2dFdbNF/33.jpg",
+    "category": "pizza",
+    "price": 19.99,
+    "recipe": "Savory barbecue beef pizza with tender slices of beef, red onions, barbecue sauce, and mozzarella cheese."
   },
   {
     "_id": 34,
-    "name": "Vegetarian Pizza",
-    "image": "vegetarian_pizza.jpg",
-    "category": "pizza",
-    "price": 14.99,
-    "recipe": "Delicious vegetarian pizza loaded with colorful bell peppers, onions, olives, and mushrooms."
+    "name": "Spicy Tortilla Soup",
+    "image": "https://i.ibb.co/zRk6rsr/34.jpg",
+    "category": "soup",
+    "price": 13.99,
+    "recipe": "Zesty and spicy tortilla soup with shredded chicken, tortilla strips, avocado, and a hint of lime."
   },
   {
     "_id": 35,
@@ -281,16 +282,16 @@
   },
   {
     "_id": 36,
-    "name": "Quinoa and Kale Salad",
-    "image": "quinoa_kale_salad.jpg",
+    "name": "Watermelon Feta Salad",
+    "image": "https://i.ibb.co/khnt7yL/36.jpg",
     "category": "salad",
-    "price": 12.99,
-    "recipe": "Nutrient-packed quinoa and kale salad with cherry tomatoes, avocado, and a lemon vinaigrette."
+    "price": 16.49,
+    "recipe": "Refreshing watermelon feta salad with mint, arugula, and a balsamic glaze, a perfect summer delight."
   },
   {
     "_id": 37,
     "name": "Creamy Potato Leek Soup",
-    "image": "creamy_potato_leek_soup.jpg",
+    "image": "https://i.ibb.co/M8ms0QQ/37.jpg",
     "category": "soup",
     "price": 11.99,
     "recipe": "Comforting creamy potato leek soup with tender potatoes, leeks, and a touch of cream for a velvety texture."
@@ -298,7 +299,7 @@
   {
     "_id": 38,
     "name": "Red Velvet Cake",
-    "image": "red_velvet_cake.jpg",
+    "image": "https://i.ibb.co/3RRSVWM/38.jpg",
     "category": "dessert",
     "price": 10.99,
     "recipe": "Decadent red velvet cake with layers of moist red velvet sponge and cream cheese frosting, a classic dessert choice."
@@ -306,7 +307,7 @@
   {
     "_id": 39,
     "name": "Pesto Chicken Pizza",
-    "image": "pesto_chicken_pizza.jpg",
+    "image": "https://i.ibb.co/dkqGrHY/39.jpg",
     "category": "pizza",
     "price": 15.99,
     "recipe": "Savory pesto chicken pizza with grilled chicken, cherry tomatoes, mozzarella, and a drizzle of basil pesto."
@@ -322,161 +323,49 @@
   {
     "_id": 41,
     "name": "Mango Avocado Salad",
-    "image": "mango_avocado_salad.jpg",
+    "image": "https://i.ibb.co/WWN4XRS/41.webp",
     "category": "salad",
     "price": 13.49,
     "recipe": "Refreshing mango avocado salad with mixed greens, red onion, and a zesty lime dressing."
   },
   {
     "_id": 42,
-    "name": "Clam Chowder",
-    "image": "clam_chowder.jpg",
-    "category": "soup",
-    "price": 12.49,
-    "recipe": "Creamy clam chowder with tender clams, potatoes, and aromatic herbs, served in a bread bowl."
-  },
-  {
-    "_id": 43,
-    "name": "Blueberry Cheesecake",
-    "image": "blueberry_cheesecake.jpg",
-    "category": "dessert",
-    "price": 11.99,
-    "recipe": "Delicious blueberry cheesecake with a buttery graham cracker crust and a blueberry compote topping."
-  },
-  {
-    "_id": 44,
-    "name": "Buffalo Chicken Pizza",
-    "image": "buffalo_chicken_pizza.jpg",
-    "category": "pizza",
-    "price": 16.99,
-    "recipe": "Spicy buffalo chicken pizza with shredded buffalo chicken, red onion, mozzarella cheese, and a drizzle of ranch dressing."
-  },
-  {
-    "_id": 45,
-    "name": "Seafood Extravaganza",
-    "image": "https://i.ibb.co/1zCrMTK/max-mota-N6-BTNba-KZMo-unsplash.jpg",
-    "category": "popular",
-    "price": 20.99,
-    "recipe": "A luxurious seafood dish featuring a medley of fresh seafood, perfectly seasoned and cooked to perfection."
-  },
-  {
-    "_id": 46,
-    "name": "Pear and Gorgonzola Salad",
-    "image": "pear_gorgonzola_salad.jpg",
-    "category": "salad",
-    "price": 14.99,
-    "recipe": "Elegant pear and gorgonzola salad with mixed greens, candied pecans, and a balsamic vinaigrette."
-  },
-  {
-    "_id": 47,
     "name": "French Onion Soup",
-    "image": "french_onion_soup.jpg",
+    "image": "https://i.ibb.co/23QvFbn/42.jpg",
     "category": "soup",
     "price": 13.49,
     "recipe": "Classic French onion soup with caramelized onions, melted cheese, and a toasted baguette on top."
   },
   {
-    "_id": 48,
-    "name": "Pumpkin Pie",
-    "image": "pumpkin_pie.jpg",
-    "category": "dessert",
-    "price": 12.99,
-    "recipe": "Spiced pumpkin pie with a buttery crust, topped with whipped cream, a perfect fall dessert."
-  },
-  {
-    "_id": 49,
-    "name": "Prosciutto and Arugula Pizza",
-    "image": "prosciutto_arugula_pizza.jpg",
-    "category": "pizza",
+    "_id": 43,
+    "recipe": "Prosciutto and Arugula Pizza",
+    "category": "offered",
+    "description": "Gourmet prosciutto and arugula pizza with a thin crust, mozzarella cheese, and a balsamic glaze drizzle.",
     "price": 17.99,
-    "recipe": "Gourmet prosciutto and arugula pizza with a thin crust, mozzarella cheese, and a balsamic glaze drizzle."
+    "image": "https://i.ibb.co/jwsssC3/43.jpg"
   },
   {
-    "_id": 50,
-    "name": "Tropical Paradise",
-    "image": "https://i.ibb.co/Lgq9St6/orkun-orcan-OUApnf-WCrvw-unsplash-1.jpg",
-    "category": "popular",
-    "price": 21.99,
-    "recipe": "A taste of the tropics in this delightful dish, featuring exotic flavors and fresh, tropical ingredients."
-  },
-  {
-    "_id": 51,
-    "name": "Kale Caesar Salad",
-    "image": "kale_caesar_salad.jpg",
-    "category": "salad",
-    "price": 15.49,
-    "recipe": "A modern twist on the classic Caesar salad, featuring nutrient-rich kale, croutons, Parmesan cheese, and Caesar dressing."
-  },
-  {
-    "_id": 52,
-    "name": "Lobster Bisque",
-    "image": "lobster_bisque.jpg",
-    "category": "soup",
+    "_id": 44,
+    "recipe": "Pear and Gorgonzola Salad",
+    "category": "offered",
+    "description": "Elegant pear and gorgonzola salad with mixed greens, candied pecans, and a balsamic vinaigrette.",
     "price": 14.99,
-    "recipe": "Decadent lobster bisque with chunks of tender lobster meat, a velvety broth, and a touch of brandy for richness."
+    "image": "https://i.ibb.co/TmzpzmS/44.jpg"
   },
   {
-    "_id": 53,
-    "name": "Mango Sorbet",
-    "image": "mango_sorbet.jpg",
-    "category": "dessert",
-    "price": 11.49,
-    "recipe": "Refreshing mango sorbet, a dairy-free and fruity dessert option to cleanse the palate."
+    "_id": 45,
+    "recipe": "Pumpkin Pie",
+    "category": "offered",
+    "description": "Spiced pumpkin pie with a buttery crust, topped with whipped cream, a perfect fall dessert.",
+    "price": 12.99,
+    "image": "https://i.ibb.co/zQqvkKq/45.jpg"
   },
   {
-    "_id": 54,
-    "name": "Truffle Mushroom Pizza",
-    "image": "truffle_mushroom_pizza.jpg",
-    "category": "pizza",
-    "price": 18.99,
-    "recipe": "Indulgent truffle mushroom pizza with a blend of gourmet mushrooms, truffle oil, and mozzarella cheese."
-  },
-  {
-    "_id": 55,
-    "name": "Chef's Special Entree",
-    "image": "https://i.ibb.co/C589BNr/front-view-grins-salad-with-shrimps-nuts-arugula-cherry-tomatoes.webp",
-    "category": "popular",
-    "price": 22.99,
-    "recipe": "A chef's special entree featuring premium ingredients, innovative cooking techniques, and a burst of flavors."
-  },
-  {
-    "_id": 56,
-    "name": "Watermelon Feta Salad",
-    "image": "watermelon_feta_salad.jpg",
-    "category": "salad",
-    "price": 16.49,
-    "recipe": "Refreshing watermelon feta salad with mint, arugula, and a balsamic glaze, a perfect summer delight."
-  },
-  {
-    "_id": 57,
-    "name": "Spicy Tortilla Soup",
-    "image": "spicy_tortilla_soup.jpg",
-    "category": "soup",
-    "price": 13.99,
-    "recipe": "Zesty and spicy tortilla soup with shredded chicken, tortilla strips, avocado, and a hint of lime."
-  },
-  {
-    "_id": 58,
-    "name": "Chocolate Lava Cupcake",
-    "image": "chocolate_lava_cupcake.jpg",
-    "category": "dessert",
-    "price": 12.49,
-    "recipe": "Irresistible chocolate lava cupcake with a gooey chocolate center, served warm and topped with a scoop of vanilla ice cream."
-  },
-  {
-    "_id": 59,
-    "name": "Barbecue Beef Pizza",
-    "image": "barbecue_beef_pizza.jpg",
-    "category": "pizza",
-    "price": 19.99,
-    "recipe": "Savory barbecue beef pizza with tender slices of beef, red onions, barbecue sauce, and mozzarella cheese."
-  },
-  {
-    "_id": 60,
-    "name": "Gourmet Seafood Platter",
-    "image": "https://i.ibb.co/TPcgbJ2/seafood-plate-with-shrimps-mussels-lobsters-served-with-lemon-glass-beer.webp",
-    "category": "popular",
-    "price": 24.99,
-    "recipe": "A luxurious gourmet seafood platter featuring a selection of the finest seafood delicacies, artfully presented."
+    "_id": 46,
+    "recipe": "Caprese Pizza",
+    "category": "offered",
+    "description": "Experience the classic flavors of Italy with our Caprese Pizza. Fresh tomatoes, mozzarella, and basil on a thin, crispy crust.",
+    "price": 16.99,
+    "image": "https://i.ibb.co/mCfN9RK/46.jpg"
   }
 ]
