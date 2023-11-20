@@ -6,11 +6,14 @@ import Cover from "../Shared/section cover/Cover";
 import UseMenu from "../../hooks/UseMenu";
 import OrderTab from "./OrderTab";
 import { Helmet } from "react-helmet";
+import { useParams } from "react-router-dom";
 
 const Order = () => {
   const categories = ["salad", "pizza", "soup", "dessert"];
+  const { category } = useParams();
+  const initialIndex = categories.indexOf(category);
+  const [tabIndex, setTabIndex] = useState(initialIndex);
 
-  const [tabIndex, setTabIndex] = useState(0);
   const [menus] = UseMenu();
 
   const salad = menus.filter((i) => i.category === "salad");

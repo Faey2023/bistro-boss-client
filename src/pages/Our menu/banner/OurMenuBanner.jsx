@@ -8,7 +8,7 @@ const OurMenuBanner = () => {
         img={bannerImg}
         heading={"Our menu"}
         text={
-          "Explore Bistro Boss's menu—a symphony of flavors! From tempting starters to gourmet pizzas, savory soups, and indulgent desserts. Every dish is crafted to perfection for an unforgettable dining experience. Taste the extraordinary."
+          "Explore Bistro Boss's menu—a symphony of flavors! Every dish is crafted to perfection for an unforgettable dining experience. Taste the extraordinary."
         }
       />
     </>
