@@ -3,6 +3,7 @@ import UseMenu from "../../../../hooks/UseMenu";
 import Menu from "../../../Shared/design/Menu";
 import saladImg from "../../../../assets/menu/salad-bg.jpg";
 import Button from "../../../Shared/button/Button";
+import { Link } from "react-router-dom";
 
 const Salad = () => {
   const [menus] = UseMenu();
@@ -21,7 +22,9 @@ const Salad = () => {
           <Menu key={menu._id} menu={menu}></Menu>
         ))}
       </div>
-      <Button title={"order your favourite food"} />
+      <Link to={`/order/${salads}`}>
+        <Button title={"order your favorite food"} />
+      </Link>
     </>
   );
 };

@@ -10,7 +10,7 @@ const OurMenu = () => {
   return (
     <>
       <Helmet>
-        <title>Bistro Boss|Our Menu</title>
+        <title>Bistro Boss|Menu</title>
       </Helmet>
       <OurMenuBanner />
       <TodayOffer />

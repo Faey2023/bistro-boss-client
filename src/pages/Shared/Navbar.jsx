@@ -41,7 +41,7 @@ const Navbar = () => {
             : "text-white text-xl font-extrabold uppercase"
         }
       >
-        our menu
+        menu
       </NavLink>
       <NavLink
         to="/order"

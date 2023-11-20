@@ -3,6 +3,7 @@ import Menu from "../../../Shared/design/Menu";
 import Cover from "../../../Shared/section cover/Cover";
 import soupBg from "../../../../assets/menu/soup-bg.jpg";
 import Button from "../../../Shared/button/Button";
+import { Link } from "react-router-dom";
 
 const Soup = () => {
   const [menus] = UseMenu();
@@ -21,7 +22,9 @@ const Soup = () => {
           <Menu key={menu._id} menu={menu}></Menu>
         ))}
       </div>
-      <Button title={"ORDER YOUR FAVORITE FOOD"} />
+      <Link to={`/order/${soup}}`}>
+        <Button title={"order your favorite food"} />
+      </Link>
     </>
   );
 };

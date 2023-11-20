@@ -4,10 +4,12 @@ import "react-tabs/style/react-tabs.css";
 import { useState } from "react";
 import Cover from "../Shared/section cover/Cover";
 import UseMenu from "../../hooks/UseMenu";
-import MenuCard from "../Shared/card/MenuCard";
 import OrderTab from "./OrderTab";
+import { Helmet } from "react-helmet";
 
 const Order = () => {
+  const categories = ["salad", "pizza", "soup", "dessert"];
+
   const [tabIndex, setTabIndex] = useState(0);
   const [menus] = UseMenu();
 
@@ -18,6 +20,9 @@ const Order = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Bistro Boss|Order</title>
+      </Helmet>
       <Cover
         img={orderImg}
         heading={"order"}
