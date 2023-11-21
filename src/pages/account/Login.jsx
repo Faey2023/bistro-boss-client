@@ -6,13 +6,16 @@ import SharedSignIn from "../Shared/signup/SharedSignIn";
 import {
   loadCaptchaEnginge,
   LoadCanvasTemplate,
-  LoadCanvasTemplateNoReload,
   validateCaptcha,
 } from "react-simple-captcha";
-import { useEffect } from "react";
-import { document } from "postcss";
+import { useEffect, useRef, useState } from "react";
+import UseAuth from "../../hooks/UseAuth";
 
 const Login = () => {
+  const { login } = UseAuth();
+
+  const captchaRef = useRef(null);
+  const [disabled, setDisabled] = useState(true);
   useEffect(() => {
     loadCaptchaEnginge(6);
   }, []);
@@ -23,9 +26,22 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+    login(email, password)
+      .then((res) => {
+        console.log(res.user);
+      })
+      .catch((err) => {
+        console.log(err.code);
+      });
   };
   const handleValidateCaptcha = () => {
-    const captcha= 
+    const captcha = captchaRef.current.value;
+    console.log(captcha);
+    if (validateCaptcha(captcha) == true) {
+      setDisabled(false);
+    } else {
+      setDisabled(true);
+    }
   };
 
   return (
@@ -47,7 +63,6 @@ const Login = () => {
                   name="email"
                   placeholder="email"
                   className="input input-bordered"
-                  required
                 />
               </div>
               <div className="form-control">
@@ -59,7 +74,6 @@ const Login = () => {
                   name="password"
                   placeholder="password"
                   className="input input-bordered"
-                  required
                 />
               </div>
               <div className="form-control">
@@ -68,20 +82,25 @@ const Login = () => {
                 </label>
                 <input
                   type="text"
+                  ref={captchaRef}
                   name="captcha"
                   placeholder="Type here"
                   className="input input-bordered"
-                  required
                 />
                 <button
                   onClick={handleValidateCaptcha}
-                  className="btn bg-[#d1a054b3] text-white"
+                  className="btn text-[#d1a054b3] btn-outline mt-6"
                 >
                   Validate
                 </button>
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-[#d1a054b3] text-white">Login</button>
+                <button
+                  disabled={disabled}
+                  className="btn bg-[#d1a054b3] text-white"
+                >
+                  Login
+                </button>
               </div>
               <h4 className="text-[#d1a054b3] text-xl ">
                 New here?

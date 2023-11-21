@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import loginBg from "../../assets/others/authentication.png";
 import loginImg from "../../assets/others/authentication2.png";
 import SharedSignIn from "../Shared/signup/SharedSignIn";
+import UseAuth from "../../hooks/UseAuth";
 
 const Registration = () => {
+  const { register } = UseAuth();
+
   const handleRegistration = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -11,6 +14,13 @@ const Registration = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(name, email, password);
+    register(email, password)
+      .then((res) => {
+        console.log(res.user);
+      })
+      .catch((err) => {
+        console.log(err.code);
+      });
   };
   return (
     <div style={{ backgroundImage: `url(${loginBg})` }}>
