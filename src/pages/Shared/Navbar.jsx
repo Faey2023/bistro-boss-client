@@ -1,7 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import UseAuth from "../../hooks/UseAuth";
+import { FiShoppingCart } from "react-icons/fi";
+import UseCart from "../../hooks/UseCart";
 
 const Navbar = () => {
+  const [cart] = UseCart();
   const { user, logout } = UseAuth();
   const handleLogout = () => {
     logout().then().catch();
@@ -57,6 +60,19 @@ const Navbar = () => {
         }
       >
         order
+      </NavLink>
+      <NavLink
+        to="/dashboard/cart"
+        className={({ isActive }) =>
+          isActive
+            ? "text-[#EEFF25] uppercase text-xl font-extrabold"
+            : "text-white text-xl font-extrabold uppercase"
+        }
+      >
+        <button className="flex">
+          <FiShoppingCart />
+          <p className="badge badge-secondary">+{cart.length}</p>
+        </button>
       </NavLink>
     </>
   );

@@ -11,6 +11,7 @@ import {
 import { useEffect, useState } from "react";
 import UseAuth from "../../hooks/UseAuth";
 import Swal from "sweetalert2";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const { login } = UseAuth();
@@ -51,10 +52,12 @@ const Login = () => {
             `,
           },
         });
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
+        navigate("/");
       })
       .catch((err) => {
         console.log(err.code);
+        toast.error(err.code);
       });
   };
   const handleValidateCaptcha = (e) => {
@@ -125,8 +128,8 @@ const Login = () => {
                   Create a New Account
                 </Link>
               </h4>
-              <SharedSignIn />
             </form>
+            <SharedSignIn />
           </div>
         </div>
       </div>

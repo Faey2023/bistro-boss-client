@@ -6,6 +6,9 @@ import ErrorPage from "../error/ErrorPage";
 import Order from "../pages/order/Order";
 import Login from "../pages/account/Login";
 import Registration from "../pages/account/Registration";
+import Dashboard from "../pages/Dashboard/Dashboard";
+import CartItems from "../pages/Dashboard/cart item/CartItems";
+import Admin from "../pages/Dashboard/admin/Admin";
 
 const MyRoute = createBrowserRouter([
   {
@@ -15,6 +18,7 @@ const MyRoute = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/menu", element: <OurMenu /> },
+      { path: "/order", element: <Order /> },
       { path: "/order/:category", element: <Order /> },
     ],
   },
@@ -25,6 +29,14 @@ const MyRoute = createBrowserRouter([
   {
     path: "/regi",
     element: <Registration />,
+  },
+  {
+    path: "dashboard",
+    element: <Dashboard />,
+    children: [
+      // { path: "dashboard", element: <Admin /> },
+      { path: "cart", element: <CartItems /> },
+    ],
   },
 ]);
 
