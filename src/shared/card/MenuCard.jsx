@@ -1,20 +1,20 @@
 import Swal from "sweetalert2";
-import UseAuth from "../../../hooks/UseAuth";
-import Button from "../button/Button";
+import UseAuth from "../../hooks/UseAuth";
 import { useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import UseAxios from "../../../hooks/UseAxios";
-import UseCart from "../../../hooks/UseCart";
+import UseAxios from "../../hooks/UseAxios";
+import UseCart from "../../hooks/UseCart";
+import Button from "../button/Button";
 
 const MenuCard = ({ menu }) => {
   const { user } = UseAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const axiosSecure = UseAxios();
-  const [,refetch] = UseCart();
+  const [, refetch] = UseCart();
   const { image, name, recipe, price, _id } = menu;
   const handleAddToCart = () => {
-    // console.log(food);
+    //console.log(food);
     if (user && user.email) {
       //send data to database
       const cartItem = {
@@ -25,7 +25,7 @@ const MenuCard = ({ menu }) => {
         price,
       };
       axiosSecure.post("/carts", cartItem).then((res) => {
-        console.log(res.data);
+        //console.log(res.data);
         toast.success(`Added ${name} to cart.`);
         refetch();
       });

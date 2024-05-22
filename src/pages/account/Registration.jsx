@@ -1,12 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import loginBg from "../../assets/others/authentication.png";
 import loginImg from "../../assets/others/authentication2.png";
-import SharedSignIn from "../Shared/signup/SharedSignIn";
 import { useForm } from "react-hook-form";
 import UseAuth from "../../hooks/UseAuth";
 import Swal from "sweetalert2";
 import toast from "react-hot-toast";
 import UseAxiosPublic from "../../hooks/UseAxiosPublic";
+import SharedSignIn from "../../shared/SharedSignIn";
 
 const Registration = () => {
   const { createUser, updateUser } = UseAuth();
@@ -20,10 +20,10 @@ const Registration = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    //console.log(data);
     createUser(data.email, data.password)
       .then((res) => {
-        console.log(res.user);
+        //console.log(res.user);
         updateUser(data.name, data.image)
           .then(() => {
             //store user
@@ -32,25 +32,27 @@ const Registration = () => {
               if (res.data.insertedId) {
                 reset();
                 Swal.fire({
-                  title: "User info updated!",
-                  text: "You clicked the button!",
+                  position: "center",
                   icon: "success",
+                  title: "Successfully registered!!!",
+                  showConfirmButton: false,
+                  timer: 2000,
                 });
               }
             });
           })
           .catch((err) => {
-            console.log(err);
+            //console.log(err);
           });
         navigate("/");
       })
       .catch((err) => {
-        console.log(err.code);
+        //console.log(err.code);
         toast.error(err.message);
       });
   };
 
-  // console.log(watch("example"));
+   //console.log(watch("example"));
 
   return (
     <div style={{ backgroundImage: `url(${loginBg})` }}>
@@ -59,7 +61,7 @@ const Registration = () => {
           <div className="text-center">
             <img src={loginImg} alt="image for registration page" />
           </div>
-          <div className=" max-w-sm">
+          <div className="max-w-sm mt-5">
             <h1 className="text-center font-bold text-4xl">Register</h1>
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
@@ -70,7 +72,7 @@ const Registration = () => {
                   {...register("name", { required: true })}
                   type="name"
                   name="name"
-                  placeholder="name"
+                  placeholder="Enter Your Name"
                   className="input input-bordered"
                 />
                 {errors.name && (
@@ -87,7 +89,7 @@ const Registration = () => {
                   {...register("image", { required: true })}
                   type="url"
                   name="image"
-                  placeholder="name"
+                  placeholder="Image URL"
                   className="input input-bordered"
                 />
                 {errors.name && (
@@ -104,7 +106,7 @@ const Registration = () => {
                   {...register("email", { required: true })}
                   type="email"
                   name="email"
-                  placeholder="email"
+                  placeholder="Enter Your Email Address"
                   className="input input-bordered"
                 />
                 {errors.email && (
@@ -121,7 +123,7 @@ const Registration = () => {
                   {...register("password", { required: true, minLength: 8 })}
                   type="password"
                   name="password"
-                  placeholder="password"
+                  placeholder="Enter Password"
                   className="input input-bordered"
                 />
                 {errors.password?.type === "minLength" && (
@@ -136,12 +138,12 @@ const Registration = () => {
                 )}
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-[#d1a054b3] text-white">
+                <button className="btn btn-outline text-[#d1a054b3] hover:text-white hover:bg-[#d1a054b3] hover:border-none font-bold text-xl">
                   Register
                 </button>
               </div>
               <h4 className="text-[#d1a054b3] text-xl">
-                Already Registered?
+                Already Registered? {""}
                 <Link to="/login" className="font-bold">
                   Go to login
                 </Link>

@@ -1,7 +1,7 @@
-import Title from "../../Shared/title/Title";
-import Menu from "../../Shared/design/Menu";
-import Button from "../../Shared/button/Button";
-import UseMenu from "../../../hooks/UseMenu";
+import UseMenu from "../../../hooks/useMenu";
+import Menu from "../../../shared/design/Menu";
+import Button from "../../../shared/button/Button";
+import Title from "../../../shared/title/Title";
 
 const PopularMenu = () => {
   const [menus] = UseMenu();
@@ -21,10 +21,10 @@ const PopularMenu = () => {
       <Title subHeading="Popular Items" heading="from our menu" />
       <div className="grid md:grid-cols-2 gap-10">
         {popular.map((menu) => (
-          <Menu key={menu._id} menu={menu}></Menu>
+          <Menu key={menu._id} menu={menu} />
         ))}
-        <Button text={"View full menu"} />
       </div>
+      <Button title={"View full menu"} link={"menu"} />
     </>
   );
 };

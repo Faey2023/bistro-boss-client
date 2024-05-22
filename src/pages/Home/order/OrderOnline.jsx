@@ -7,20 +7,20 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 //images
+import Title from "../../../shared/title/Title";
 import slide1 from "../../../assets/home/slide1.jpg";
 import slide2 from "../../../assets/home/slide2.jpg";
 import slide3 from "../../../assets/home/slide3.jpg";
 import slide4 from "../../../assets/home/slide4.jpg";
-import Title from "../../Shared/title/Title";
+
 const OrderOnline = () => {
   return (
     <>
-      
-        <Title
-          subHeading="From
+      <Title
+        subHeading="From
           11:00am to 10:00pm"
-          heading="Order Online"
-        />
+        heading="Order Online"
+      />
       <div className="my-5">
         <Swiper
           slidesPerView={4}

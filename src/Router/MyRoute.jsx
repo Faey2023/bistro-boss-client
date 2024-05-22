@@ -9,6 +9,7 @@ import Registration from "../pages/account/Registration";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import CartItems from "../pages/Dashboard/cart item/CartItems";
 import Admin from "../pages/Dashboard/admin/Admin";
+import Contact from "../pages/Contact/Contact";
 
 const MyRoute = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const MyRoute = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <Home /> },
+      { path: "/contact", element: <Contact /> },
       { path: "/menu", element: <OurMenu /> },
       { path: "/order", element: <Order /> },
       { path: "/order/:category", element: <Order /> },

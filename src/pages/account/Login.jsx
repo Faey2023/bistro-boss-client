@@ -1,7 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import loginBg from "../../assets/others/authentication.png";
 import loginImg from "../../assets/others/authentication2.png";
-import SharedSignIn from "../Shared/signup/SharedSignIn";
 
 import {
   loadCaptchaEnginge,
@@ -12,13 +11,14 @@ import { useEffect, useState } from "react";
 import UseAuth from "../../hooks/UseAuth";
 import Swal from "sweetalert2";
 import toast from "react-hot-toast";
+import SharedSignIn from "../../shared/SharedSignIn";
 
 const Login = () => {
   const { login } = UseAuth();
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
 
-  const from = location.state?.from?.pathname || "/";
+  // const from = location.state?.from?.pathname || "/";
 
   // const captchaRef = useRef(null);
   const [disabled, setDisabled] = useState(true);
@@ -31,38 +31,28 @@ const Login = () => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    //console.log(email, password);
     login(email, password)
       .then((res) => {
-        console.log(res.user);
+        //console.log(res.user);
         Swal.fire({
-          title: "Login successful.",
-          showClass: {
-            popup: `
-              animate__animated
-              animate__fadeInUp
-              animate__faster
-            `,
-          },
-          hideClass: {
-            popup: `
-              animate__animated
-              animate__fadeOutDown
-              animate__faster
-            `,
-          },
+          position: "center",
+          icon: "success",
+          title: "Successfully logged in!!!",
+          showConfirmButton: false,
+          timer: 2000,
         });
         // navigate(from, { replace: true });
         navigate("/");
       })
       .catch((err) => {
-        console.log(err.code);
+        //console.log(err.code);
         toast.error(err.code);
       });
   };
   const handleValidateCaptcha = (e) => {
     const captcha = e.target.value;
-    console.log(captcha);
+    //console.log(captcha);
     if (validateCaptcha(captcha) == true) {
       setDisabled(false);
     } else {
@@ -117,13 +107,13 @@ const Login = () => {
               <div className="form-control mt-6">
                 <button
                   disabled={disabled}
-                  className="btn bg-[#d1a054b3] text-white"
+                  className="btn btn-outline text-[#d1a054b3] hover:text-white hover:bg-[#d1a054b3] hover:border-none font-bold text-xl"
                 >
                   Login
                 </button>
               </div>
               <h4 className="text-[#d1a054b3] text-xl ">
-                New here?
+                New here? {""}
                 <Link to="/regi" className="font-bold">
                   Create a New Account
                 </Link>

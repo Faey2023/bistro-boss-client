@@ -2,11 +2,11 @@ import orderImg from "../../assets/shop/banner2.jpg";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { useState } from "react";
-import Cover from "../Shared/section cover/Cover";
-import UseMenu from "../../hooks/UseMenu";
+import useMenu from "../../hooks/useMenu";
 import OrderTab from "./OrderTab";
 import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
+import Cover from "../../shared/section cover/Cover";
 
 const Order = () => {
   const categories = ["salad", "pizza", "soup", "dessert"];
@@ -14,7 +14,7 @@ const Order = () => {
   const initialIndex = categories.indexOf(category);
   const [tabIndex, setTabIndex] = useState(initialIndex);
 
-  const [menus] = UseMenu();
+  const [menus] = useMenu();
 
   const salad = menus.filter((i) => i.category === "salad");
   const pizza = menus.filter((i) => i.category === "pizza");

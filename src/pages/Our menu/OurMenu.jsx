@@ -1,8 +1,6 @@
 import { Helmet } from "react-helmet";
 import TodayOffer from "./TodayOffer";
-import OurMenuBanner from "./banner/OurMenuBanner";
-import UseMenu from "../../hooks/UseMenu";
-import Cover from "../Shared/section cover/Cover";
+import useMenu from "../../hooks/useMenu";
 
 //images
 import dessertImg from "../../assets/menu/dessert-bg.jpeg";
@@ -10,9 +8,11 @@ import pizzaImg from "../../assets/menu/pizza-bg.jpg";
 import saladImg from "../../assets/menu/salad-bg.jpg";
 import soupImg from "../../assets/menu/soup-bg.jpg";
 import MenuCategory from "./category/MenuCategory";
+import Cover from "../../shared/section cover/Cover";
+import bannerImg from "../../assets/menu/banner3.jpg";
 
 const OurMenu = () => {
-  const [menus] = UseMenu();
+  const [menus] = useMenu();
   const dessert = menus.filter((i) => i.category === "dessert");
   const pizza = menus.filter((i) => i.category === "pizza");
   const salad = menus.filter((i) => i.category === "salad");
@@ -22,7 +22,13 @@ const OurMenu = () => {
       <Helmet>
         <title>Bistro Boss|Menu</title>
       </Helmet>
-      <OurMenuBanner />
+      <Cover
+        img={bannerImg}
+        heading={"Our menu"}
+        text={
+          "Explore Bistro Boss's menu—a symphony of flavors! Every dish is crafted to perfection for an unforgettable dining experience. Taste the extraordinary."
+        }
+      />
       <TodayOffer />
       {/* dessert */}
       <div>

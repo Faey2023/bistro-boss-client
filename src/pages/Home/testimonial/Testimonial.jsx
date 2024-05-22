@@ -1,4 +1,3 @@
-import Title from "../../Shared/title/Title";
 import { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,6 +13,7 @@ import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 //icons
 import { FaQuoteLeft } from "react-icons/fa";
+import Title from "../../../shared/title/Title";
 
 const Testimonial = () => {
   const [reviews, setReviews] = useState([]);

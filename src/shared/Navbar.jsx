@@ -1,13 +1,25 @@
 import { Link, NavLink } from "react-router-dom";
-import UseAuth from "../../hooks/UseAuth";
+import UseAuth from "../hooks/UseAuth";
 import { FiShoppingCart } from "react-icons/fi";
-import UseCart from "../../hooks/UseCart";
+import { CiMenuFries } from "react-icons/ci";
+import UseCart from "../hooks/UseCart";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [cart] = UseCart();
   const { user, logout } = UseAuth();
   const handleLogout = () => {
-    logout().then().catch();
+    logout()
+      .then((res) => {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Successfully logged out!!!",
+          showConfirmButton: false,
+          timer: 2000,
+        });
+      })
+      .catch();
   };
   const navLinks = (
     <>
@@ -32,16 +44,6 @@ const Navbar = () => {
         contact us
       </NavLink>
       <NavLink
-        to="/dashboard"
-        className={({ isActive }) =>
-          isActive
-            ? "text-[#EEFF25] uppercase text-xl font-extrabold"
-            : "text-white text-xl font-extrabold uppercase"
-        }
-      >
-        dashboard
-      </NavLink>
-      <NavLink
         to="/menu"
         className={({ isActive }) =>
           isActive
@@ -61,6 +63,16 @@ const Navbar = () => {
       >
         order
       </NavLink>
+      {/* <NavLink
+        to="/dashboard"
+        className={({ isActive }) =>
+          isActive
+            ? "text-[#EEFF25] uppercase text-xl font-extrabold"
+            : "text-white text-xl font-extrabold uppercase"
+        }
+      >
+        dashboard
+      </NavLink> */}
       <NavLink
         to="/dashboard/cart"
         className={({ isActive }) =>
@@ -82,20 +94,7 @@ const Navbar = () => {
         <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+              <CiMenuFries className="text-2xl" />
             </label>
             <ul
               tabIndex={0}
@@ -104,13 +103,14 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <p
+          <Link
+            to="/"
             className="text-xl md:text-2xl font-bold uppercase
           "
           >
             <span className="text-xl md:text-4xl font-black"> Bistro boss</span>
             <br /> <span className="tracking-[9.12px]">restaurant</span>
-          </p>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-5">{navLinks}</ul>

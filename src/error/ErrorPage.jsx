@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import errorImg from "../assets/404.gif";
-import Button from "../pages/Shared/button/Button";
+import Button from "../shared/button/Button";
 
 const ErrorPage = () => {
   return (
